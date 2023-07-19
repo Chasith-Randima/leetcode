@@ -5,18 +5,19 @@ class Solution(object):
         :rtype: int
         """
 
-        # nums.sort()
-        # n = len(nums)
-        # return nums[n//2]
-        count = len(nums)
-        tempDict = defaultdict(int)
+        nums.sort()
+        n = len(nums)
+        return nums[n//2]
         
-        for num in nums:
-            tempDict[num] += 1
+#         count = len(nums)
+#         tempDict = defaultdict(int)
         
-        count = count//2
+#         for num in nums:
+#             tempDict[num] += 1
         
-        for key,value in tempDict.items():
-            if value > count:
-                return key
-        return 0
+#         count = count//2
+        
+#         for key,value in tempDict.items():
+#             if value > count:
+#                 return key
+#         return 0
